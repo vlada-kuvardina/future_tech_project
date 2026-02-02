@@ -1878,6 +1878,10 @@ button[aria-label]::before {
   padding: 1.875rem;
   transition-duration: var(--transition-duration);
 }
+.video-player__panel:not(.is-active) {
+  opacity: 0;
+  visibility: hidden;
+}
 .video-player__panel::before {
   content: "";
   position: absolute;
@@ -1916,16 +1920,16 @@ button[aria-label]::before {
   }
 }
 
-.video-car {
+.video-card {
   display: grid;
   row-gap: 1.875rem;
 }
 @media (width <= 90.06125rem) {
-  .video-car {
+  .video-card {
     row-gap: 1.25rem;
   }
 }
-.video-car__body {
+.video-card__body {
   display: grid;
   row-gap: clamp(0.25rem, 0.1544117647rem + 0.3921568627vw, 0.625rem);
 }
