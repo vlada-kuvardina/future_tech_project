@@ -17,6 +17,7 @@
                 &--wide {
                     grid-column: -1 / 1;
                     margin-top: rem(20);
+                    row-gap: fluid(16, 10);
                 }
             }
         }
